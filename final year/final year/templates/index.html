@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Generation</h1>
+        <form id="imageForm">
+            <label for="textPrompt">Enter Text Prompt:</label>
+            <input type="text" id="textPrompt" name="textPrompt" required>
+            <button type="submit">Generate Image</button>
+        </form>
+        <div id="imageResult"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
